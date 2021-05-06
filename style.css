@@ -33,16 +33,16 @@ h1 {
 }
 
 #quiz {
-    width: 800px;
+    width: 1000px;
     max-width: 80%;
     background-color: darkred;
     padding: 10px;
     color: goldenrod;
     box-shadow: 0 0 10px 2px;
     font-size: 18px;
-    /* font-weight: bold; */
     margin-top: 40px;
     margin-bottom: 20px;
+    line-height: 2;
 }
 
 .intro {
