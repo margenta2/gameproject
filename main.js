@@ -147,14 +147,14 @@ function showResults(questions, quizBox, resultsBox) {
         userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
         if(userAnswer===questions[i].correctAnswer) {
             numCorrect++;
-            answerContainers[i].style.color = 'green';
+            answerContainers[i].style.color = 'limegreen';
         }
 
         else {
             answerContainers[i].style.color = 'red';
         }
     }
-    resultsBox.innerHTML = numCorrect + ' out of ' + questions.length;
+    resultsBox.innerHTML = numCorrect + ' out of ' + questions.length + ' correct!';
 }
 
 submitButton.onclick = function() {

@@ -39,7 +39,7 @@ h1 {
     padding: 10px;
     color: goldenrod;
     box-shadow: 0 0 10px 2px;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 40px;
     margin-bottom: 20px;
     line-height: 2;
@@ -55,8 +55,34 @@ h1 {
     padding: 10px;
 }
 
-.submit {
+#submit {
+    background-color: goldenrod;
     margin: 10px;
-    padding: 20px;
+    padding: 5px;
     font-size: 20px;
+    border: 3px solid rgb(79, 192, 79)
+    
+}
+
+#results {
+    background-color: indigo;
+    color:rgb(79, 192, 79);
+    margin: 20px 0;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+#submit:hover {
+    border-color: blueviolet;
+}
+
+.outcome {
+    background-color: rgb(79, 192, 79);
+    color: indigo;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px indigo;
+    margin-bottom: 20px;
+    font-size: 25px;
 }
