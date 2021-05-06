@@ -105,6 +105,7 @@ const quizBox = document.getElementById('quiz');
 let resultsBox = document.getElementById('results');
 let submitButton = document.getElementById('submit');
 
+//
 function generateQuiz(questions, quizBox, resultsBox, submitButton) {
 
 function showQuestions(questions, quizBox) {

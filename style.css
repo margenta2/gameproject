@@ -4,10 +4,9 @@
 }
 
 @font-face {
-    font-family: "Parry Hotter";
-    src: url("/fonts/ParryHotter-LOZ.ttf") format("ttf");
+    font-family: harryPotter;
+    src: url('HarryP.ttf');
 }
-
 
 body {
     background-image: url("./images/harry-potter-2.jpg");
@@ -27,9 +26,10 @@ body {
 h1 {
     background-color: indigo;
     color: goldenrod;
-    font: "Parry Hotter";
-    font-size: 40px;
+    font-size: 70px;
     padding: 20px;
+    font-family: harryPotter;
+    font-weight: normal;
 }
 
 #quiz {
@@ -40,7 +40,7 @@ h1 {
     color: goldenrod;
     box-shadow: 0 0 10px 2px;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     line-height: 2;
 }
