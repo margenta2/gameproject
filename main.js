@@ -105,7 +105,7 @@ const quizBox = document.getElementById('quiz');
 let resultsBox = document.getElementById('results');
 let submitButton = document.getElementById('submit');
 
-//
+//create funtion to house other function//
 function generateQuiz(questions, quizBox, resultsBox, submitButton) {
 
 function showQuestions(questions, quizBox) {
@@ -116,6 +116,7 @@ function showQuestions(questions, quizBox) {
 //for loop cycles through and save answers to array- add radio button for each//
     for(let i = 0; i < questions.length; i++) {
         answers = [];
+        //for in loop iterates through array and adds radio button for each//
         for(letter in questions[i].answers){
             answers.push(
                 '<label>'
@@ -134,6 +135,7 @@ function showQuestions(questions, quizBox) {
         );
             
     }
+    //.join concatenates string together//
     quizBox.innerHTML = output.join(' ');
 }
 
@@ -143,7 +145,8 @@ function showResults(questions, quizBox, resultsBox) {
     let answerContainers = quizBox.querySelectorAll('.answers');
     let userAnswer = '';
     let numCorrect = 0;
-
+//loops through and determine if answer correct, if correct adds to score and changes color//
+// using || means or, so quiz won't stop if answer skipped//
     for(let i = 0; i < questions.length; i++){
         userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
         if(userAnswer===questions[i].correctAnswer) {
@@ -158,6 +161,7 @@ function showResults(questions, quizBox, resultsBox) {
     resultsBox.innerHTML = numCorrect + ' out of ' + questions.length + ' correct!';
 }
 
+//when button clicked results of quiz will show//
 submitButton.onclick = function() {
     showResults(questions, quizBox, resultsBox);
 }
