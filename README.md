@@ -7,7 +7,7 @@
 This is a project is a trivia quiz to test one's knowledge of the Harry Potter books and movies. 
 
 ### Wireframe
-Insert Picture
+![Wireframe](./images/Wireframe.png "Wireframe")
 
 ### Features
 #### Bronze
